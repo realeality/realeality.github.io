@@ -17,17 +17,8 @@
 <meta property="og:locale" content="en_US">
 <meta property="og:image" content="http://img.mp.sohu.com/upload/20170526/d3113b0b7179436faced571f4ed2a3ee.png">
 <meta property="og:image" content="http://img.mp.sohu.com/upload/20170526/c6db33814a064da89cac779cfbf0016c_th.png">
-<meta property="og:image" content="d:%5C%E6%96%87%E6%A1%A3%5C%E7%94%B5%E5%AD%90%E4%B9%A6%E7%AC%94%E8%AE%B0%5Ctypora-user-images%5Cimage-20201024170935878.png">
-<meta property="og:image" content="d:%5C%E6%96%87%E6%A1%A3%5C%E7%94%B5%E5%AD%90%E4%B9%A6%E7%AC%94%E8%AE%B0%5Ctypora-user-images%5Cimage-20201024171047361.png">
-<meta property="og:image" content="d:%5C%E6%96%87%E6%A1%A3%5C%E7%94%B5%E5%AD%90%E4%B9%A6%E7%AC%94%E8%AE%B0%5Ctypora-user-images%5Cimage-20201024171445298.png">
-<meta property="og:image" content="d:%5C%E6%96%87%E6%A1%A3%5C%E7%94%B5%E5%AD%90%E4%B9%A6%E7%AC%94%E8%AE%B0%5Ctypora-user-images%5Cimage-20201024200415817.png">
-<meta property="og:image" content="d:%5C%E6%96%87%E6%A1%A3%5C%E7%94%B5%E5%AD%90%E4%B9%A6%E7%AC%94%E8%AE%B0%5Ctypora-user-images%5Cimage-20201024200653533.png">
-<meta property="og:image" content="d:%5C%E6%96%87%E6%A1%A3%5C%E7%94%B5%E5%AD%90%E4%B9%A6%E7%AC%94%E8%AE%B0%5Ctypora-user-images%5Cimage-20201024201023632.png">
-<meta property="og:image" content="d:%5C%E6%96%87%E6%A1%A3%5C%E7%94%B5%E5%AD%90%E4%B9%A6%E7%AC%94%E8%AE%B0%5Ctypora-user-images%5Cimage-20201024201847139.png">
-<meta property="og:image" content="d:%5C%E6%96%87%E6%A1%A3%5C%E7%94%B5%E5%AD%90%E4%B9%A6%E7%AC%94%E8%AE%B0%5Ctypora-user-images%5Cimage-20201024210259370.png">
-<meta property="og:image" content="d:%5C%E6%96%87%E6%A1%A3%5C%E7%94%B5%E5%AD%90%E4%B9%A6%E7%AC%94%E8%AE%B0%5Ctypora-user-images%5Cimage-20201024210524154.png">
 <meta property="article:published_time" content="2020-10-24T13:07:00.000Z">
-<meta property="article:modified_time" content="2020-10-27T12:16:19.873Z">
+<meta property="article:modified_time" content="2020-10-27T13:40:38.943Z">
 <meta property="article:author" content="John Doe">
 <meta property="article:tag" content="前端笔记">
 <meta name="twitter:card" content="summary">
@@ -192,9 +183,9 @@
 <h2 id="信号在网线和集线器中传输">信号在网线和集线器中传输</h2>
 <p>​		从计算机发送出来的网络包会通过集线器、 路由器等设备被转发， 最终到达目的地。  所有的包在传输到目的地的过程中都是独立的， 相互之间没有任何关联。</p>
 <p>​		信号到达集线器的时候并不是跟刚发送出去的时候一模一样。集线器收到的信号有时会出现衰减（ 图 3.3）。 信号在网线的传输过程中，能量会逐渐损失。 网线越长， 信号衰减就越严重。</p>
-<p><img src="D:%5C%E6%96%87%E6%A1%A3%5C%E7%94%B5%E5%AD%90%E4%B9%A6%E7%AC%94%E8%AE%B0%5Ctypora-user-images%5Cimage-20201024170935878.png" alt="image-20201024170935878"></p>
+<p>![image-20201024170935878](网络是如何连接的 第三章 从网线到网络设备\image-20201024170935878.png)</p>
 <p>​		局域网网线使用的是双绞线， 其中“双绞” 的意思就是以两根信号线为一组缠绕在一起， 这种拧麻花一样的设计是为了抑制噪声的影响。</p>
-<p><img src="D:%5C%E6%96%87%E6%A1%A3%5C%E7%94%B5%E5%AD%90%E4%B9%A6%E7%AC%94%E8%AE%B0%5Ctypora-user-images%5Cimage-20201024171047361.png" alt="image-20201024171047361"></p>
+<p>![image-20201024171047361](网络是如何连接的 第三章 从网线到网络设备\image-20201024171047361.png)</p>
 <p>​		当信号到达集线器后， 会被广播到整个网络中。 以太网的基本架构就是将包发到所有的设备， 然后由设备根据接收方 MAC 地址来判断应该接收哪些包， 而集线器就是这一架构的忠实体现， 它就是负责按照以太网的基本架构将信号广播出去。</p>
 <p>​		信号到达集线器的 PHY（ MAU） 模块后， 会进入中继电路。 中继电路的基本功能就是将输入的信号广播到集线器的所有端口上。</p>
 <p>​		由于集线器只是原封不动地将信号广播出去， 所以即便信号受到噪声的干扰发生了失真， 也会原样发送到目的地。 这时， 接收信号的设备， 也就是交换机、 路由器、 服务器等， 会在将信号转换成数字信息后通过 FCSA校验发现错误， 并将出错的包丢弃。  协议栈的 TCP 模块会检测到丢包，并对该包进行重传。</p>
@@ -203,7 +194,7 @@
 <li>**交换根据地址表进行转发 **</li>
 </ol>
 <p>​		交换机的设计是将网络包原样转发到目的地， 图 3.7 就是它的内部结构。  交换机端口的 MAC 模块不具有 MAC 地址。</p>
-<p><img src="D:%5C%E6%96%87%E6%A1%A3%5C%E7%94%B5%E5%AD%90%E4%B9%A6%E7%AC%94%E8%AE%B0%5Ctypora-user-images%5Cimage-20201024171445298.png" alt="image-20201024171445298"></p>
+<p>![image-20201024171445298](网络是如何连接的 第三章 从网线到网络设备\image-20201024171445298.png)</p>
 <p>​		交换机根据 MAC 地址表查找 MAC 地址，然后将信号发送到相应的端口。</p>
 <ol start="2">
 <li><strong>MAC地址表的维护</strong></li>
@@ -215,20 +206,20 @@
 </ol>
 <p>​		全双工模式是交换机特有的工作模式， 它可以同时进行发送和接收操作， 集线器不具备这样的特性。使用集线器时， 如果多台计算机同时发送信号， 信号就会在集线器内部混杂在一起， 进而无法使用， 这种现象称为碰撞， 是以太网的一个重要特征。 不过， 只要不用集线器， 就不会发生碰撞。</p>
 <p>​		而使用双绞线时， 发送和接收的信号线是各自独立的 A， 因此在双绞线中信号不会发生碰撞。 网线连接的另一端， 即交换机端口和网卡的 PHY（ MAU） 模块以及 MAC 模块， 其内部发送和接收电路也是各自独立的， 信号也不会发生碰撞。 因此， 只要不用集线器， 就可以避免信号碰撞了。</p>
-<p><img src="D:%5C%E6%96%87%E6%A1%A3%5C%E7%94%B5%E5%AD%90%E4%B9%A6%E7%AC%94%E8%AE%B0%5Ctypora-user-images%5Cimage-20201024200415817.png" alt="image-20201024200415817"></p>
+<p>![image-20201024200415817](网络是如何连接的 第三章 从网线到网络设备\image-20201024200415817.png)</p>
 <h2 id="路由器的包转发操作">路由器的包转发操作</h2>
 <ol>
 <li>**路由器的基本知识  **</li>
 </ol>
 <p>​		网络包经过集线器和交换机之后， 现在到达了路由器， 并在此被转发到下一个路由器。   这一步转发的工作原理和交换机类似， 也是通过查表判断包转发的目标。 不过在具体的操作过程上， 路由器和交换机是有区别的。 因为路由器是基于 IP 设计的， 而交换机是基于以太网设计的</p>
 <p>​		路由器的内部结构如图 3.12 所示。</p>
-<p><img src="D:%5C%E6%96%87%E6%A1%A3%5C%E7%94%B5%E5%AD%90%E4%B9%A6%E7%AC%94%E8%AE%B0%5Ctypora-user-images%5Cimage-20201024200653533.png" alt="image-20201024200653533"></p>
+<p>![image-20201024200653533](网络是如何连接的 第三章 从网线到网络设备\image-20201024200653533.png)</p>
 <p>​		路由器在转发包时， 首先会通过端口将发过来的包接收进来， 这一步的工作过程取决于端口对应的通信技术。   接下来， 转发模块会根据接收到的包的 IP 头部中记录的接收方 IP 地址， 在路由表中进行查询， 以此判断转发目标。 然后， 转发模块将包转移到转发目标对应的端口， 端口再按照硬件的规则将包发送出去， 也就是转发模块委托端口模块将包发送出去的意思。  路由器的各个端口都具有 MAC 地址和 IP 地址。</p>
 <ol start="2">
 <li><strong>路由表中的信息</strong></li>
 </ol>
 <p>​		在“查表判断转发目标” 这一点上， 路由器和交换机的大体思路是类似的。路由器中的表叫作路由表， 其中包含的信息如图 3.13 所示。</p>
-<p><img src="D:%5C%E6%96%87%E6%A1%A3%5C%E7%94%B5%E5%AD%90%E4%B9%A6%E7%AC%94%E8%AE%B0%5Ctypora-user-images%5Cimage-20201024201023632.png" alt="image-20201024201023632"></p>
+<p>![image-20201024201023632](网络是如何连接的 第三章 从网线到网络设备\image-20201024201023632.png)</p>
 <p>​		交换机是通过 MAC 头部中的接收方 MAC 地址来判断转发目标的， 而路由器则是根据 IP 头部中的 IP 地址来判断的。   交换机在地址表中只匹配完全一致的记录， 而路由器则会忽略主机号部分， 只匹配网络号部分。   打个比方， 路由器在转发包的时候只看接收方地址属于哪个区，×× 区发往这一边，×× 区发往那一边。</p>
 <ol start="3">
 <li><strong>路由器的包接收操作</strong></li>
@@ -239,7 +230,7 @@
 <li><strong>通过分片功能拆分大网络包</strong></li>
 </ol>
 <p>​		不同的线路和局域网类型各自能传输的最大包长度也不同， 因此输出端口的最大包长度可能会小于输入端口。  遇到这种情况， 可以使用 IP 协议中定义的<strong>分片功能</strong>对包进行拆分， 缩短每个包的长度。</p>
-<p><img src="D:%5C%E6%96%87%E6%A1%A3%5C%E7%94%B5%E5%AD%90%E4%B9%A6%E7%AC%94%E8%AE%B0%5Ctypora-user-images%5Cimage-20201024201847139.png" alt="image-20201024201847139"></p>
+<p>![image-20201024201847139](网络是如何连接的 第三章 从网线到网络设备\image-20201024201847139.png)</p>
 <p>​		如果查询标志字段发现不能分片， 那么就只能丢弃这个包， 并通过ICMP 消息通知发送方。 否则， 就可以按照输出端口 MTU 对数据进行依次拆分了。</p>
 <p>​		路由器判断下一个转发目标的方法如下。<br>
 ● 如果路由表的网关列内容为 IP 地址，则该地址就是下一个转发目标。<br>
@@ -260,13 +251,13 @@
 192.168.0.0 ～ 192.168.255.255<br>
 ​		在制定私有地址规则时， 这些地址属于公有地址中还没有分配的范围。换句话说， 私有地址本身并没有什么特别的结构， 只不过是将公有地址中没分配的一部分拿出来规定只能在内网使用它们而已。</p>
 <p>​		当公司内网和互联网连接的时候， 需要采用图 3.17 这样的结构， 即将公司内网分成两个部分， 一部分是对互联网开放的服务器， 另一部分是公司内部设备。 其中对互联网开放的部分分配<strong>公有地址</strong>， 可以和互联网直接进行通信；内网部分则分配<strong>私有地址</strong>， 内网中的设备不能和互联网直接收发网络包， 而是通过一种特别的机制进行连接， 这个机制就叫<strong>地址转换</strong>。</p>
-<p><img src="D:%5C%E6%96%87%E6%A1%A3%5C%E7%94%B5%E5%AD%90%E4%B9%A6%E7%AC%94%E8%AE%B0%5Ctypora-user-images%5Cimage-20201024210259370.png" alt="image-20201024210259370"></p>
+<p>![image-20201024210259370](网络是如何连接的 第三章 从网线到网络设备\image-20201024210259370.png)</p>
 <ol start="2">
 <li><strong>地址转换的基本原理</strong></li>
 </ol>
 <p>​		地址转换的基本原理是在转发网络包时对 IP 头部中的 IP 地址和端口号进行改写，这里的端口号指的是 TCP 和 UDP 的端口号，不是路由器和集线器连接网线的那个端口。</p>
 <p>​		TCP 连接操作的第一个包被转发到互联网时， 会像图 3.18 这样， 将发送方 IP 地址从私有地址改写成公有地址。 这里使用的公有地址是地址转换设备的互联网接入端口的地址。 与此同时， 端口号也需要进行改写， 地址转换设备会随机选择一个空闲的端口。 然后， 改写前的私有地址和端口号， 以及改写后的公有地址和端口号， 会作为一组相对应的记录保存在地址转换设备内部的一张表中。</p>
-<p><img src="D:%5C%E6%96%87%E6%A1%A3%5C%E7%94%B5%E5%AD%90%E4%B9%A6%E7%AC%94%E8%AE%B0%5Ctypora-user-images%5Cimage-20201024210524154.png" alt="image-20201024210524154"></p>
+<p>![image-20201024210524154](网络是如何连接的 第三章 从网线到网络设备\image-20201024210524154.png)</p>
 <p>​		改写发送方 IP 地址和端口号之后， 包就被发往互联网， 最终到达服务器， 然后服务器会返回一个包。 地址转换设备会从地址对应表中通过公有地址和端口号找到相对应的私有地址和端口号， 并改写接收方信息， 然后将包发给公司内网，这样包就能够到达原始的发送方了。</p>
 
       
@@ -501,15 +492,15 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
           <ul class="article-tag-list" q-show="showTags">
              
               <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color5">前端笔记</a>
+              </li>
+             
+              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color5">书籍推荐</a>
               </li>
              
               <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color3">翻译</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color5">前端笔记</a>
               </li>
             
             <div class="clearfix"></div>
